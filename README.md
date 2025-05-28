@@ -1,5 +1,5 @@
 <h1>Aportando Ideas</h1>
-<hr>
+
 ##Table of contents 
   1. General info
   2. Servicios
