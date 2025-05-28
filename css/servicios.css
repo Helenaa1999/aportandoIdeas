@@ -1,0 +1,56 @@
+.gridSection{
+    display: grid;
+    grid-template-areas:
+    "rotulos carteles"
+    "rotulos lonas";
+    grid-template-columns: 1fr 1fr;
+}
+
+.rotulos{
+    grid-area: rotulos;
+}
+
+.carteles{
+    grid-area: carteles;
+}
+
+.lonas{
+    grid-area: lonas;
+}
+
+.textoImagen {
+    position: absolute;
+    top: 0;
+    left: 0;
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    opacity: 0;
+    padding: 20px;
+    transition: opacity 0.3s ease, background-color 0.3s ease;
+    gap:2rem;
+    z-index: 10;
+}
+
+.imageContainer:hover .textoImagen{
+    opacity: 1;
+}
+
+.imageContainer img {
+    transition: transform 0.3s ease-in-out;
+}
+
+.imageContainer:hover img{
+    transform: scale(1.1);
+}
+
+
+@media screen and (max-width: 768px){
+    .gridSection{
+        display: flex;
+        flex-direction: column;
+    }
+}

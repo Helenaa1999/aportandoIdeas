@@ -1,0 +1,19 @@
+.eslogan{
+    background-image: url("../img/contacto.jpg");
+    background-size: cover;
+    height: 50rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.eslogan h3{
+    font-size: 3rem;
+    color: white;
+}
+
+@media screen and (max-width: 768px){
+    .eslogan h3{
+        font-size: 2rem;
+    }
+}
